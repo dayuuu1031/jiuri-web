@@ -38,29 +38,42 @@ const AboutView: React.FC<AboutViewProps> = ({ lang, activeTab, onTabChange }) =
   ];
 
   const manufacturingImages = [
-    "https://i.postimg.cc/GhZ18pG6/watermark-2026-1-8-1f10eaac-ec69-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/VvQVsJ3n/watermark-2026-1-8-20d1425e-ec66-11f0-9cf1-0242ac110005.jpg",
+    "https://i.postimg.cc/Rh7bWMBP/watermark-2026-1-8-d4f02304-ec66-11f0-9cf1-0242ac110005.jpg",
     "https://i.postimg.cc/vB6KdrSB/watermark-2026-1-8-25d7b946-ec65-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/cCyb1vVM/watermark-2026-1-8-344f390c-ec67-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/brcBYZKx/watermark-2026-1-8-46cf5a56-ec64-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/jdGrwjPG/watermark-2026-1-8-4ab527b8-ec69-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/Fz5BFY2c/watermark-2026-1-8-4e580afe-ec6c-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/WzLHpdQ7/watermark-2026-1-8-697c747e-ec6b-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/9QKzfVFN/watermark-2026-1-8-6a18250c-ec68-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/mgJhrR2n/watermark-2026-1-8-6ded6166-ec67-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/PJsRfCB6/watermark-2026-1-8-83668f28-ec66-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/t4w7gyC8/watermark-2026-1-8-83dbc91a-ec6a-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/9FvjRfZ6/watermark-2026-1-8-84ea19ac-ec69-11f0-9cf1-0242ac110005.jpg",
     "https://i.postimg.cc/2yRKj1PT/watermark-2026-1-8-972d6dec-ec6b-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/FH81KmsB/watermark-2026-1-8-99d5e572-ec68-11f0-9cf1-0242ac110005.jpg",
+    "https://i.postimg.cc/sxY0MVzF/watermark-2026-1-8-d6ee8fc4-ec6b-11f0-9cf1-0242ac110005.jpg",
+    "https://i.postimg.cc/PJsRfCB6/watermark-2026-1-8-83668f28-ec66-11f0-9cf1-0242ac110005.jpg",
     "https://i.postimg.cc/prf1m2HY/watermark-2026-1-8-ad09801e-ec67-11f0-9cf1-0242ac110005.jpg",
     "https://i.postimg.cc/QCQnFX3m/watermark-2026-1-8-bb399936-ec6b-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/Rh7bWMBP/watermark-2026-1-8-d4f02304-ec66-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/sxY0MVzF/watermark-2026-1-8-d6ee8fc4-ec6b-11f0-9cf1-0242ac110005.jpg",
+    "https://i.postimg.cc/WzLHpdQ7/watermark-2026-1-8-697c747e-ec6b-11f0-9cf1-0242ac110005.jpg",
+    "https://i.postimg.cc/VvQVsJ3n/watermark-2026-1-8-20d1425e-ec66-11f0-9cf1-0242ac110005.jpg",
+    "https://i.postimg.cc/cCyb1vVM/watermark-2026-1-8-344f390c-ec67-11f0-9cf1-0242ac110005.jpg",
     "https://i.postimg.cc/SR6tny4y/watermark-2026-1-8-dab7a2fe-ec6a-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/2SM35mS8/watermark-2026-1-8-dea9e940-ec69-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/3JPH4wmV/watermark-2026-1-8-e89b3ff4-ec68-11f0-9cf1-0242ac110005.jpg",
-    "https://i.postimg.cc/2jhtcxZB/watermark-2026-1-8-f1c776e4-ec6b-11f0-9cf1-0242ac110005.jpg"
+    "https://i.postimg.cc/Fz5BFY2c/watermark-2026-1-8-4e580afe-ec6c-11f0-9cf1-0242ac110005.jpg"
+  ];
+
+  const manufacturingFeatures = [
+    {
+      title: lang === 'zh' ? '装备实力' : 'Equipment Strength',
+      desc: lang === 'zh' 
+        ? '汇聚大型龙门铣、落地镗等尖端母机，驾驭巨型工件的精密制造。' 
+        : 'Aggregates high-end parent machines such as large gantry milling and floor boring, mastering the precision manufacturing of giant workpieces.',
+      icon: 'fa-gears'
+    },
+    {
+      title: lang === 'zh' ? '工艺深度' : 'Process Depth',
+      desc: lang === 'zh' 
+        ? '深度融合精密机加、结构焊接与电气集成，构建全产业链制造闭环。' 
+        : 'Deeply integrates precision machining, structural welding, and electrical integration to build a closed-loop manufacturing system for the entire industry chain.',
+      icon: 'fa-layer-group'
+    },
+    {
+      title: lang === 'zh' ? '匠心品质' : 'Craftsmanship Quality',
+      desc: lang === 'zh' 
+        ? '严谨的工人实操与现代化的生产流程，确保每一处细节的完美交付。' 
+        : 'Rigorous worker operations and modern production processes ensure the perfect delivery of every detail.',
+      icon: 'fa-gem'
+    }
   ];
 
   return (
@@ -328,26 +341,74 @@ const AboutView: React.FC<AboutViewProps> = ({ lang, activeTab, onTabChange }) =
 
             {/* 制造能力 (Manufacturing Capability) */}
             {activeTab === 'tech' && (
-              <div className="animate-fadeIn">
-                <h3 className="text-4xl font-black text-white mb-14 flex items-center gap-5">
-                  <span className="w-2 h-10 bg-blue-600 inline-block"></span>
-                  {t.about_tech}
-                </h3>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {manufacturingImages.map((img, idx) => (
-                    <div 
-                      key={idx} 
-                      onClick={() => setSelectedImg(img)}
-                      className="group relative aspect-video overflow-hidden border border-white/10 shadow-xl bg-gray-900 transition-all hover:border-blue-400 cursor-zoom-in"
-                    >
-                       <img 
-                        src={img} 
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                        alt={`Manufacturing capability ${idx + 1}`} 
-                       />
+              <div className="animate-fadeIn space-y-20">
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
+                  <div>
+                    <h3 className="text-4xl font-black text-white mb-4 flex items-center gap-5">
+                      <span className="w-2 h-10 bg-blue-600 inline-block"></span>
+                      {t.about_tech}
+                    </h3>
+                    <div className="h-[1px] w-48 bg-blue-500/50"></div>
+                  </div>
+                  <p className="text-blue-300 font-mono-tech text-[10px] uppercase tracking-[0.4em] opacity-50">
+                    High-End Precision Manufacturing Facility
+                  </p>
+                </div>
+
+                {/* Feature Highlights */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  {manufacturingFeatures.map((feat, i) => (
+                    <div key={i} className="group relative p-10 bg-white/5 border border-white/10 border-l-4 border-l-blue-600 backdrop-blur-xl shadow-2xl transition-all hover:bg-white/10">
+                      <div className="absolute top-0 right-0 w-24 h-24 overflow-hidden pointer-events-none opacity-5">
+                        <i className={`fa-solid ${feat.icon} text-9xl -mr-8 -mt-8`}></i>
+                      </div>
+                      <div className="relative z-10">
+                        <div className="w-12 h-12 flex items-center justify-center bg-blue-600/10 text-blue-400 text-2xl mb-6 transition-transform group-hover:scale-110">
+                          <i className={`fa-solid ${feat.icon}`}></i>
+                        </div>
+                        <h4 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-blue-300 transition-colors">
+                          {feat.title}
+                        </h4>
+                        <p className="text-gray-300 font-bold leading-relaxed text-[15px] opacity-80">
+                          {feat.desc}
+                        </p>
+                      </div>
                     </div>
                   ))}
+                </div>
+                
+                {/* Image Gallery */}
+                <div>
+                  <div className="flex items-center gap-4 mb-10">
+                    <h4 className="text-lg font-black text-white uppercase tracking-widest">{lang === 'zh' ? '生产车间实景' : 'Live Production Workshop'}</h4>
+                    <div className="flex-grow h-[1px] bg-white/10"></div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {manufacturingImages.map((img, idx) => (
+                      <div 
+                        key={idx} 
+                        onClick={() => setSelectedImg(img)}
+                        className="group relative aspect-video overflow-hidden border border-white/10 shadow-xl bg-gray-900 transition-all hover:border-blue-400 cursor-zoom-in rounded-none"
+                      >
+                         <img 
+                          src={img} 
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-90 group-hover:brightness-110" 
+                          alt={`Manufacturing capability ${idx + 1}`} 
+                         />
+                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                           <span className="text-[10px] font-mono-tech text-blue-300 uppercase tracking-widest">Jiuri Precision // Facility_{idx + 1}</span>
+                         </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="py-12 text-center">
+                   <p className="text-sm font-bold text-gray-400 max-w-2xl mx-auto italic">
+                     {lang === 'zh' 
+                        ? '我们坚持核心母机全自主维护，关键工艺百分百受控，确保久日出品必属精品。' 
+                        : 'We insist on independent maintenance of core machines and 100% controlled key processes to ensure premium quality.'}
+                   </p>
                 </div>
               </div>
             )}

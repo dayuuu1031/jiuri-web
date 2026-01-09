@@ -35,7 +35,7 @@ const ContactView: React.FC<ContactViewProps> = ({ lang }) => {
                 </div>
                 <div>
                   <p className="text-xs text-blue-300/60 font-black uppercase tracking-widest mb-2">{t.phone}</p>
-                  <p className="text-3xl font-black text-white tracking-tighter">0513-88211688</p>
+                  <p className="text-2xl font-black text-white tracking-tighter">0513-88211688</p>
                 </div>
               </div>
 
@@ -45,7 +45,10 @@ const ContactView: React.FC<ContactViewProps> = ({ lang }) => {
                 </div>
                 <div>
                   <p className="text-xs text-blue-300/60 font-black uppercase tracking-widest mb-2">{t.mobile}</p>
-                  <p className="text-3xl font-black text-white tracking-tighter">18801759985</p>
+                  <div className="flex flex-col gap-2">
+                    <p className="text-2xl font-black text-white tracking-tighter">18801759985</p>
+                    <p className="text-2xl font-black text-white tracking-tighter">13806277962</p>
+                  </div>
                 </div>
               </div>
 
